@@ -1,5 +1,5 @@
 function getMyDetails() {
-  console.log("getMyDetails");
+  //console.log("getMyDetails");
   return $.ajax({
     url: "/users/me",
   });
@@ -29,6 +29,7 @@ function signUp(data) {
 }
 
 function getAllListings(params) {
+  console.log("network.js getAllListings")
   let url = "/api/properties";
   if (params) {
     url += "?" + params;
